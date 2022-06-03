@@ -1,0 +1,17 @@
+<php
+//membuka file
+$data = "welcome.txt";
+$bukafile = fopen($data, "r");
+if (!$bukafile)
+{print ("file  $data gagal dibuka !");
+exit;
+}
+while (!foef($bukafile))
+{//membaca file
+$data = fgets($bukafile,50);
+//menampilkan data
+print("$data <br>");
+}
+//menutup file
+fclose($bukafile);
+?>
